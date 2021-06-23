@@ -1,0 +1,18 @@
+{
+  "name": "surlefeu",
+  "version": "0.1.0",
+  "description": "Landing page for Surlefeu",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "keywords": [
+    "Afang",
+    "Restaurant"
+  ],
+  "author": "George Okanga",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
