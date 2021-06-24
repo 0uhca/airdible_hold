@@ -25,6 +25,7 @@ $color-black: #000;
 $color-grey: #9E9E9E;
 
 $color-white: #fff;
+$color-light: #F9F9F9;
 
 @mixin shadow-1 {
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
@@ -74,7 +75,7 @@ body {
 
         nav {
             width: 100%;
-            height: 9rem;
+            height: 10rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -149,35 +150,53 @@ body {
                 cursor: pointer;
                 z-index: 999;
                 position: relative;
-                transition: all .4s ease;
+                transition: all .65s ease;
                 right: 0;
         
                 .toggle {
                     font-size: 1.4rem;
                     font-family: $font-menu;
-                    transition: all .4s;
                     color: $color-grey;
+                    transition: all .65s ease;
                 }
                         
-            } 
-            
-        
-            
+            }          
         }
     }
 
     #hero {
         margin-top: 12rem;
+        position: relative;
+        z-index: 99;
         
         .centered {
             text-align: center;
-            z-index: 9;
+            transition: all .65s ease;
+
+            .happy-emoji {
+                display: inline-block;
+                margin-bottom: 3rem;
+                transition: all .65s ease;
+            }
+            
 
             h1 {
                 font-size: 9.7rem;
                 line-height: 1.2;
-                margin: 3rem 0 1rem 0;
                 color: $color-green;
+                width: 50%;
+                margin: auto;
+
+                background-image: url(../img/assets/oil.svg);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+
+                // &::after {
+                //     content: url(../img/assets/oil.svg);
+                //     z-index: 98 !important;
+                //     margin-left: -10rem;
+                //     margin-bottom: -5rem;
+                // }
             }
 
             p {
@@ -185,6 +204,7 @@ body {
                 margin: 0 auto;
                 line-height: 2;
                 color: $color-grey;
+                margin-top: 1rem;
 
                 a {
                     color: $color-green;
@@ -202,7 +222,7 @@ body {
         .btm-links {
             display: flex;
             justify-content: space-between;
-            margin-top: 22rem;
+            margin-top: 23rem;
             .links {
                 display: flex;
 
@@ -220,10 +240,6 @@ body {
                         font-size: 1.4rem;
                         margin-top: .3rem;
 
-                        &::after {
-                            content: url(../img/assets/);
-                        }
-
                         a {
                             text-decoration: none;
                             color: inherit;
@@ -232,11 +248,124 @@ body {
                             &:hover {
                                 color: $color-grey;
                             }
+
+                            &::after {
+                                content: url(../img/assets/arrow-up-right.svg);
+                                margin-left: 1rem;
+                                height: .2rem !important;
+                                // height: auto;
+                            }
                         }
                     }
                 }
             }
+
+            .form {
+                width: auto;
+                display: flex;
+                align-items: center;
+
+                input[type=email] {
+                    width: 36rem;
+                    height: 5rem;
+                    border-radius: .4rem;
+                    border: none;
+                    background-color: $color-light;
+                    padding-left: 2.5rem;
+
+                    &::placeholder {
+                        font-size: 1.4rem;
+                        font-family: $font-body;
+                        font-weight: 300;
+                        color: $color-grey;
+                    }
+              
+                    &:focus,
+                    &:active {
+                        outline: none;
+                        color: $color-grey;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        font-family: $font-body;
+                    }
+                }
+
+                button[type=submit] {
+                    border: none;
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: .4rem;
+                    margin-left: 1rem;
+                    background-color: $color-light;
+                    cursor: pointer;
+                }
+            }
         }
+    }
+
+    // The elements
+
+    .eclipse-1 {
+        position: absolute; 
+        width: 40rem;
+        height: 40rem;
+        border-radius: 1000px;
+        background-color: $color-light;
+        top: 35%;
+        left: 18%;
+    }
+
+    .chinese-x {
+        transition: all .65s ease;
+        position: absolute; 
+        top: 12%;
+        right: 8%;
+    }
+
+    .food-tray1 {
+        position: absolute;
+        bottom: 35%;
+        left: 10%;
+        z-index: 4;
+    }
+
+    .food-tray2 {
+        position: absolute; 
+        top: 35%;
+        right: 20%;
+        transition: all .65s ease;
+    }
+
+    .soft-s {
+        position: absolute; 
+        bottom:25%;
+        right: 50%;
+    }
+
+    .soft-s-1 {
+        position: absolute; 
+        top: 20%;
+        left: 25%;
+    }
+
+    .soft-s-2 {
+        position: absolute; 
+        bottom: 25%;
+        right: 20%;
+    }
+
+    .review-x {
+        transition: all .65s ease;
+        position: absolute;
+        bottom: 35%;
+        left: 10%;
+        z-index: 3;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
     .scape {
@@ -252,6 +381,25 @@ body {
     }
 }
 
+.translatey-40 {
+    transform: translateY(40px);
+    transition: all .65s ease;
+}
+
+.translatex-40 {
+    transform: translateX(40px);
+    transition: all .65s ease;
+}
+
+.rotatey-180 {
+    transform: rotateY(180deg);
+    transition: all .65s ease;
+}
+
+.translatexy {
+    transform: translate(-7rem, -3rem) rotate(-45deg);
+}
+
 
 
 
@@ -262,7 +410,7 @@ body {
     }
 
     nav {
-        height: 6rem;
+        height: 7rem !important;
     }
 
     .nav-list {

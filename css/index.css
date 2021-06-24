@@ -33,7 +33,7 @@ body {
   position: relative; }
   #header .container nav {
     width: 100%;
-    height: 9rem;
+    height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,28 +80,39 @@ body {
       cursor: pointer;
       z-index: 999;
       position: relative;
-      transition: all .4s ease;
+      transition: all .65s ease;
       right: 0; }
       #header .container nav .hamburger .toggle {
         font-size: 1.4rem;
         font-family: "Bebas Neue", cursive;
-        transition: all .4s;
-        color: #9E9E9E; }
+        color: #9E9E9E;
+        transition: all .65s ease; }
   #header #hero {
-    margin-top: 12rem; }
+    margin-top: 12rem;
+    position: relative;
+    z-index: 99; }
     #header #hero .centered {
       text-align: center;
-      z-index: 9; }
+      transition: all .65s ease; }
+      #header #hero .centered .happy-emoji {
+        display: inline-block;
+        margin-bottom: 3rem;
+        transition: all .65s ease; }
       #header #hero .centered h1 {
         font-size: 9.7rem;
         line-height: 1.2;
-        margin: 3rem 0 1rem 0;
-        color: #399431; }
+        color: #399431;
+        width: 50%;
+        margin: auto;
+        background-image: url(../img/assets/oil.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right; }
       #header #hero .centered p {
         width: 40%;
         margin: 0 auto;
         line-height: 2;
-        color: #9E9E9E; }
+        color: #9E9E9E;
+        margin-top: 1rem; }
         #header #hero .centered p a {
           color: #399431; }
           #header #hero .centered p a:hover {
@@ -110,7 +121,7 @@ body {
     #header #hero .btm-links {
       display: flex;
       justify-content: space-between;
-      margin-top: 22rem; }
+      margin-top: 23rem; }
       #header #hero .btm-links .links {
         display: flex; }
         #header #hero .btm-links .links .item {
@@ -123,14 +134,91 @@ body {
           #header #hero .btm-links .links .item p {
             font-size: 1.4rem;
             margin-top: .3rem; }
-            #header #hero .btm-links .links .item p::after {
-              content: url(../img/assets/); }
             #header #hero .btm-links .links .item p a {
               text-decoration: none;
               color: inherit;
               transition: all .3s ease; }
               #header #hero .btm-links .links .item p a:hover {
                 color: #9E9E9E; }
+              #header #hero .btm-links .links .item p a::after {
+                content: url(../img/assets/arrow-up-right.svg);
+                margin-left: 1rem;
+                height: .2rem !important; }
+      #header #hero .btm-links .form {
+        width: auto;
+        display: flex;
+        align-items: center; }
+        #header #hero .btm-links .form input[type=email] {
+          width: 36rem;
+          height: 5rem;
+          border-radius: .4rem;
+          border: none;
+          background-color: #F9F9F9;
+          padding-left: 2.5rem; }
+          #header #hero .btm-links .form input[type=email]::placeholder {
+            font-size: 1.4rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            color: #9E9E9E; }
+          #header #hero .btm-links .form input[type=email]:focus, #header #hero .btm-links .form input[type=email]:active {
+            outline: none;
+            color: #9E9E9E;
+            font-size: 1.4rem;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif; }
+        #header #hero .btm-links .form button[type=submit] {
+          border: none;
+          height: 5rem;
+          width: 5rem;
+          border-radius: .4rem;
+          margin-left: 1rem;
+          background-color: #F9F9F9;
+          cursor: pointer; }
+  #header .eclipse-1 {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 1000px;
+    background-color: #F9F9F9;
+    top: 35%;
+    left: 18%; }
+  #header .chinese-x {
+    transition: all .65s ease;
+    position: absolute;
+    top: 12%;
+    right: 8%; }
+  #header .food-tray1 {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    z-index: 4; }
+  #header .food-tray2 {
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    transition: all .65s ease; }
+  #header .soft-s {
+    position: absolute;
+    bottom: 25%;
+    right: 50%; }
+  #header .soft-s-1 {
+    position: absolute;
+    top: 20%;
+    left: 25%; }
+  #header .soft-s-2 {
+    position: absolute;
+    bottom: 25%;
+    right: 20%; }
+  #header .review-x {
+    transition: all .65s ease;
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    z-index: 3; }
+  #header .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
   #header .scape {
     position: absolute;
     bottom: 2rem;
@@ -140,11 +228,26 @@ body {
     #header .scape img {
       height: 100%; }
 
+.translatey-40 {
+  transform: translateY(40px);
+  transition: all .65s ease; }
+
+.translatex-40 {
+  transform: translateX(40px);
+  transition: all .65s ease; }
+
+.rotatey-180 {
+  transform: rotateY(180deg);
+  transition: all .65s ease; }
+
+.translatexy {
+  transform: translate(-7rem, -3rem) rotate(-45deg); }
+
 @media screen and (max-width: 468px) {
   .container {
     width: 90%; }
   nav {
-    height: 6rem; }
+    height: 7rem !important; }
   .nav-list {
     width: 100%;
     height: 100vh;
