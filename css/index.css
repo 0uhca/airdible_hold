@@ -316,7 +316,8 @@ body {
       margin: 4rem 0; }
       .nav-list .nav-item .nav-link {
         color: #000 !important;
-        font-size: 1.6rem !important; }
+        font-size: 1.6rem !important;
+        -webkit-tap-highlight-color: transparent; }
   .container {
     width: 90%; }
   #header #hero {
@@ -343,7 +344,7 @@ body {
       #header #hero .btm-links .form {
         width: 100%;
         background-color: #fff !important;
-        margin-top: 5rem;
+        margin-top: 2rem;
         display: flex;
         justify-content: space-between; }
         #header #hero .btm-links .form input[type=email] {
@@ -364,5 +365,8 @@ nav {
   height: 6rem !important; }
   nav .nav-list.active {
     bottom: 0; }
+  nav .hamburger {
+    -webkit-tap-highlight-color: transparent; }
   nav .toggle {
-    color: #000; }
+    color: #000;
+    -webkit-tap-highlight-color: transparent; }

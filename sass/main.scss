@@ -491,6 +491,7 @@ body {
                 .nav-link {
                     color: $color-black !important;
                     font-size: 1.6rem !important;
+                    -webkit-tap-highlight-color: transparent;
                 }
             }
         }
@@ -541,7 +542,7 @@ body {
                     .form {
                         width: 100%;
                         background-color: $color-white !important;
-                        margin-top: 5rem;
+                        margin-top: 2rem;
                         display: flex;
                         justify-content: space-between;
 
@@ -580,8 +581,13 @@ body {
         bottom: 0;
     }
 
+    .hamburger {
+        -webkit-tap-highlight-color: transparent;
+    }
+
     .toggle {
         color: $color-black;
+        -webkit-tap-highlight-color: transparent;
     }
     
 }
