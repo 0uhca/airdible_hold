@@ -13,10 +13,10 @@ selectElement ('.hamburger').addEventListener('click', () => {
 
     if (navList.classList.contains('active')) {
         navToggle.textContent = 'X Menu';
-        navToggle.style.color = '#000';
+        navToggle.style.color = '#fff';
     } else {
         navToggle.textContent = 'O Menu';
-        navToggle.style.color = '#9E9E9E';
+        navToggle.style.color = '#B0A1BA';
     }
 
 

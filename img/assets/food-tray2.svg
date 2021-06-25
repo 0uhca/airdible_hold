@@ -1,18 +1,20 @@
-<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<rect x="28.2842" width="40" height="40" rx="8" transform="rotate(45 28.2842 0)" fill="#EDF2FE"/>
-<g clip-path="url(#clip1)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M31.2336 38.5972L18.7711 26.1347C18.5456 25.9092 18.1921 25.9001 17.9808 26.1114C17.7678 26.3243 17.7778 26.6787 18.0024 26.9033L30.4649 39.3659C30.6904 39.5913 31.0448 39.6013 31.2577 39.3883C31.469 39.177 31.4582 38.8218 31.2336 38.5972Z" fill="#4E7EF8"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M31.558 25.8202C28.3644 22.6266 23.274 22.5409 20.1877 25.6272L31.751 37.1905C34.8382 34.105 34.7508 29.013 31.558 25.8202Z" fill="#4E7EF8"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M31.7363 24L33.3743 25.638L31.7363 27.276L30.0983 25.638L31.7363 24Z" fill="#4E7EF8"/>
-</g>
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="7" y="5" width="40" height="40" rx="8" fill="#2C0146"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36.3777 30.2071L18.753 30.2071C18.4342 30.2071 18.1777 30.4506 18.1777 30.7494C18.1777 31.0506 18.4354 31.2942 18.753 31.2942L36.3777 31.2942C36.6966 31.2942 36.9542 31.0506 36.9542 30.7494C36.9542 30.4506 36.6954 30.2071 36.3777 30.2071Z" fill="#B0A1BA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.573 20.9424C23.0565 20.9424 19.3965 24.4812 19.3965 28.8459H35.7494C35.7506 24.4812 32.0883 20.9424 27.573 20.9424V20.9424Z" fill="#B0A1BA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.4121 19.5294H28.7286V21.8459H26.4121V19.5294Z" fill="#B0A1BA"/>
+<rect x="7" y="5" width="40" height="40" rx="8" stroke="#57038A" stroke-width="0.5"/>
 </g>
 <defs>
-<clipPath id="clip0">
-<rect x="28.2842" width="40" height="40" rx="8" transform="rotate(45 28.2842 0)" fill="white"/>
-</clipPath>
-<clipPath id="clip1">
-<rect width="20" height="18.8235" fill="white" transform="translate(27.5771 14.8492) rotate(45)"/>
-</clipPath>
+<filter id="filter0_d" x="0.75" y="0.75" width="52.5" height="52.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="3"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
 </defs>
 </svg>

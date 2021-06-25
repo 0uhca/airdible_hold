@@ -14,6 +14,11 @@ $font-menu: 'Bebas Neue', cursive;
 $color-green: #399431;
 $color-green-accent: #F5FAF5;
 
+$color-purple: #330052;
+$color-purple-dark: #2C0146;
+$color-purple-accent: #B0A1BA;
+$color-purple-stroke: #57038A;
+
 
 $color-blue: #4E7EF8;
 $color-blue-accent: #EDF2FE;
@@ -49,7 +54,7 @@ html {
 body {
     font-size: 1.6rem;
     font-weight: 300;
-    background-color: $color-white;
+    background-color: $color-purple;
     color: $color-black;
     line-height: 1.6;
     width: 100% !important; 
@@ -82,7 +87,7 @@ body {
             letter-spacing: 1px;
         
             .nav-brand {
-                height: 2.8rem;
+                height: 3.8rem;
                 width: auto;
                 img {
                     height: 100%;
@@ -100,13 +105,13 @@ body {
                         text-decoration: none;
                         font-family: $font-menu;
                         font-size: 1.4rem;
-                        color: $color-grey;
+                        color: $color-purple-accent;
                         display: inline-block;
                         transform: scale(0);
                         transition: transform .65s;
                         
                         &:hover {
-                            color: $color-black;
+                            color: $color-white;
                             transition: all .65s ease;
                         }
                     }
@@ -155,7 +160,7 @@ body {
                 .toggle {
                     font-size: 1.4rem;
                     font-family: $font-menu;
-                    color: $color-grey;
+                    color: $color-purple-accent;
                     transition: all .65s ease;
                 }
                         
@@ -164,7 +169,7 @@ body {
     }
 
     #hero {
-        margin-top: 13rem;
+        margin-top: 10rem;
         position: relative;
         z-index: 99;
         
@@ -180,30 +185,32 @@ body {
             
 
             h1 {
-                font-size: 9.7rem;
-                line-height: 1.2;
-                color: $color-green;
-                width: 50%;
+                font-size: 8.7rem;
+                line-height: 1.3;
+                color: $color-white;
+                width: auto;
                 margin: auto;
 
-                background-image: url(../img/assets/oil.svg);
-                background-repeat: no-repeat;
-                background-position: bottom right;
+                // background-image: url(../img/assets/oil.svg);
+                // background-repeat: no-repeat;
+                // background-position: bottom right;
             }
 
             p {
                 width: 40%;
                 margin: 0 auto;
                 line-height: 2;
-                color: $color-grey;
-                margin-top: 1rem;
+                color: $color-purple-accent;
+                font-size: 1.8rem;
+                margin-top: 3rem;
 
                 a {
-                    color: $color-green;
+                    color: $color-white;
+                    text-decoration: none;
 
                     &:hover {
                         transition: all .3s ease;
-                        color: $color-grey;
+                        color: $color-purple-accent;
                     }
                 }
             }
@@ -222,13 +229,15 @@ body {
                     h5 {
                         font-size: 1.2rem;
                         font-family: $font-menu;
-                        color: $color-grey;
+                        color: $color-purple-accent;
+                        opacity: 0.3;
                         letter-spacing: 1px;
                     }
 
                     p {
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
                         margin-top: .3rem;
+                        color: $color-white;
 
                         a {
                             text-decoration: none;
@@ -236,7 +245,7 @@ body {
                             transition: all .3s ease;
 
                             &:hover {
-                                color: $color-grey;
+                                color: $color-purple-accent;
                             }
 
                             &::after {
@@ -259,21 +268,22 @@ body {
                     width: 36rem;
                     height: 5rem;
                     border-radius: .4rem;
+                    // border: .5px solid $color-purple-stroke;
                     border: none;
-                    background-color: $color-light;
+                    background-color: $color-purple-dark;
                     padding-left: 2.5rem;
 
                     &::placeholder {
                         font-size: 1.4rem;
                         font-family: $font-body;
                         font-weight: 300;
-                        color: $color-grey;
+                        color: $color-purple-accent;
                     }
               
                     &:focus,
                     &:active {
                         outline: none;
-                        color: $color-grey;
+                        color: $color-purple-accent;
                         font-size: 1.4rem;
                         font-weight: 300;
                         font-family: $font-body;
@@ -286,7 +296,7 @@ body {
                     width: 5rem;
                     border-radius: .4rem;
                     margin-left: 1rem;
-                    background-color: $color-light;
+                    background-color: $color-purple-dark;
                     cursor: pointer;
                 }
             }
@@ -300,7 +310,7 @@ body {
         width: 40rem;
         height: 40rem;
         border-radius: 1000px;
-        background-color: $color-light;
+        background-color: $color-purple-dark;
         top: 35%;
         left: 18%;
     }
@@ -407,8 +417,9 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #2c0146ea;
     z-index: 1000;
+    cursor: pointer;
     
 }
 
@@ -420,7 +431,7 @@ body {
     transform: translate(-50%, -50%);
     animation: moveUp .65s ease;
 
-    background-color: $color-white;
+    background-color: $color-purple-dark;
     width: 33.5rem;
     height: auto;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
@@ -445,17 +456,17 @@ body {
         img {
             display: inline-block;
             margin-left: .5rem;
-            height: 1.4rem;
+            height: 1.6rem;
             width: auto;
         }
 
         &:first-child {
-            background-color: $color-light;
-            color: $color-grey;
+            background-color: $color-purple-accent;
+            color: $color-purple;
         }
 
         &:last-child {
-            background-color: $color-green;
+            background-color: $color-purple;
             color: $color-white;
             margin-top: 2rem;
         }
@@ -478,7 +489,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: $color-white;
+        background-color: $color-purple;
         position: fixed;
         bottom: -100vh;
         left: 0;
@@ -489,7 +500,7 @@ body {
             margin: 4rem 0;
 
                 .nav-link {
-                    color: $color-black !important;
+                    color: $color-white !important;
                     font-size: 1.6rem !important;
                     -webkit-tap-highlight-color: transparent;
                 }
@@ -506,7 +517,7 @@ body {
     
                 .centered {
                     h1 {
-                        font-size: 5.4rem !important;
+                        font-size: 3.9rem !important;
                         width: 100% !important;
                     }
     
@@ -541,7 +552,6 @@ body {
 
                     .form {
                         width: 100%;
-                        background-color: $color-white !important;
                         margin-top: 2rem;
                         display: flex;
                         justify-content: space-between;
@@ -569,13 +579,8 @@ body {
         }
     }
 
-    .soft-s-2 {
-        bottom: 25rem !important;
-        left: 10% !important;
-    }
-
     nav {
-        height: 6rem !important;
+        height: 6rem;
 
     .nav-list.active {
         bottom: 0;
