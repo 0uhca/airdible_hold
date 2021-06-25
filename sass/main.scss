@@ -505,19 +505,19 @@ body {
     
                 .centered {
                     h1 {
-                        font-size: 4.4rem !important;
+                        font-size: 5.4rem !important;
                         width: 100% !important;
                     }
     
                     p {
                         width: 100% !important;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                     }
                 }
     
                 .btm-links {
                     flex-direction: column;
-                    margin-top: 12rem !important;
+                    margin-top: 15rem !important;
     
                     .links {
                         justify-content: space-between;
@@ -541,16 +541,18 @@ body {
                     .form {
                         width: 100%;
                         background-color: $color-white !important;
-                        margin-top: 3rem;
+                        margin-top: 5rem;
                         display: flex;
                         justify-content: space-between;
 
                         input[type=email] {
                             width: 80% !important;
+                            padding-left: 1.2rem;
+                            
                         }
 
                         button[type=submit] {
-                            width: 15%;
+                            width: 20%;
                         }
                     }
                 }
@@ -567,7 +569,7 @@ body {
     }
 
     .soft-s-2 {
-        bottom: 35% !important;
+        bottom: 25rem !important;
         left: 10% !important;
     }
 

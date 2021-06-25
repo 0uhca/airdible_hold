@@ -322,14 +322,14 @@ body {
   #header #hero {
     margin-top: 10rem; }
     #header #hero .centered h1 {
-      font-size: 4.4rem !important;
+      font-size: 5.4rem !important;
       width: 100% !important; }
     #header #hero .centered p {
       width: 100% !important;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     #header #hero .btm-links {
       flex-direction: column;
-      margin-top: 12rem !important; }
+      margin-top: 15rem !important; }
       #header #hero .btm-links .links {
         justify-content: space-between; }
         #header #hero .btm-links .links .item {
@@ -343,20 +343,21 @@ body {
       #header #hero .btm-links .form {
         width: 100%;
         background-color: #fff !important;
-        margin-top: 3rem;
+        margin-top: 5rem;
         display: flex;
         justify-content: space-between; }
         #header #hero .btm-links .form input[type=email] {
-          width: 80% !important; }
+          width: 80% !important;
+          padding-left: 1.2rem; }
         #header #hero .btm-links .form button[type=submit] {
-          width: 15%; }
+          width: 20%; }
   #header .scape {
     display: none; }
   .will-hide {
     display: none; } }
 
 .soft-s-2 {
-  bottom: 35% !important;
+  bottom: 25rem !important;
   left: 10% !important; }
 
 nav {
