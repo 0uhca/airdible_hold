@@ -40,7 +40,8 @@ body {
     letter-spacing: 1px; }
     #header .container nav .nav-brand {
       height: 3.8rem;
-      width: auto; }
+      width: auto;
+      -webkit-tap-highlight-color: transparent; }
       #header .container nav .nav-brand img {
         height: 100%; }
     #header .container nav .nav-list {
@@ -112,7 +113,8 @@ body {
         margin-top: 3rem; }
         #header #hero .centered p a {
           color: #fff;
-          text-decoration: none; }
+          text-decoration: none;
+          -webkit-tap-highlight-color: transparent; }
           #header #hero .centered p a:hover {
             transition: all .3s ease;
             color: #B0A1BA; }
@@ -128,7 +130,6 @@ body {
             font-size: 1.2rem;
             font-family: "Bebas Neue", cursive;
             color: #B0A1BA;
-            opacity: 0.3;
             letter-spacing: 1px; }
           #header #hero .btm-links .links .item p {
             font-size: 1.2rem;
@@ -325,7 +326,7 @@ body {
   #header #hero {
     margin-top: 10rem; }
     #header #hero .centered h1 {
-      font-size: 3.9rem !important;
+      font-size: 5.4rem !important;
       width: 100% !important; }
     #header #hero .centered p {
       width: 100% !important;

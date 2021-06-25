@@ -37,7 +37,8 @@ if (mediaQuery.matches) {
 });
 
 const toggleModal = document.querySelector('.order-now');
-const modalOverlay = document.querySelector('.overlay')
+const menuOrderNow = document.querySelector('.menu-order');
+const modalOverlay = document.querySelector('.overlay');
 
 const centeredCTA = document.querySelector('.centered-cta');
 
@@ -45,6 +46,12 @@ toggleModal.addEventListener('click', () => {
     modalOverlay.style.display = 'block';
     centeredCTA.style.display = 'block';
 })
+
+menuOrderNow.addEventListener('click', () => {
+    modalOverlay.style.display = 'block';
+    centeredCTA.style.display = 'block';
+})
+
 
 modalOverlay.addEventListener('click', () => {
     modalOverlay.style.display = 'none';

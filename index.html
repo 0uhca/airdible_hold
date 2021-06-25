@@ -20,7 +20,7 @@
         <div class="container">
             <nav id="nav">
                 <div class="nav-brand">
-                    <a href="#">
+                    <a href="www.airdible.com">
                         <img src="img/assets/logo.svg" alt="Airdible logo">
                     </a>
                 </div>
@@ -33,7 +33,7 @@
                             <a href="javascript:void(0)" class="nav-link">Say Hi</a>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Order Now</a>
+                            <a href="javascript:void(0)" class="nav-link menu-order">Order a meal</a>
                         </li>
                     </ul>
                 </div>
@@ -65,15 +65,16 @@
                         </div>
                         <div class="item">
                             <h5>Socials</h5>
-                            <p><a href="javascript:void(0)">Instagram</a></p>
+                            <p><a href="www.instagram.com/airdiblegrandeur" target="_blank">Instagram</a></p>
                         </div>
                     </div>
                     <div class="form">
-                        <form action="javascript:void(0)"></form>
-                        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@airdible.com" required> 
-                        <button type="submit">
-                            <img src="img/assets/Paper-plane.svg" alt="">
-                        </button>
+                        <form name="subscription" method="POST" data-netlify="true">
+                            <input type="email" name="subscribe-email" id="subscribe-email" placeholder="email@airdible.com" required> 
+                            <button type="submit">
+                                <img src="img/assets/Paper-plane.svg" alt="">
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

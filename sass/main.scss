@@ -19,6 +19,8 @@ $color-purple-dark: #2C0146;
 $color-purple-accent: #B0A1BA;
 $color-purple-stroke: #57038A;
 
+$color-mustard: #FEA116;
+
 
 $color-blue: #4E7EF8;
 $color-blue-accent: #EDF2FE;
@@ -89,6 +91,7 @@ body {
             .nav-brand {
                 height: 3.8rem;
                 width: auto;
+                -webkit-tap-highlight-color: transparent;
                 img {
                     height: 100%;
                 }
@@ -190,10 +193,6 @@ body {
                 color: $color-white;
                 width: auto;
                 margin: auto;
-
-                // background-image: url(../img/assets/oil.svg);
-                // background-repeat: no-repeat;
-                // background-position: bottom right;
             }
 
             p {
@@ -207,6 +206,7 @@ body {
                 a {
                     color: $color-white;
                     text-decoration: none;
+                    -webkit-tap-highlight-color: transparent;
 
                     &:hover {
                         transition: all .3s ease;
@@ -230,7 +230,6 @@ body {
                         font-size: 1.2rem;
                         font-family: $font-menu;
                         color: $color-purple-accent;
-                        opacity: 0.3;
                         letter-spacing: 1px;
                     }
 
@@ -517,7 +516,7 @@ body {
     
                 .centered {
                     h1 {
-                        font-size: 3.9rem !important;
+                        font-size: 5.4rem !important;
                         width: 100% !important;
                     }
     
