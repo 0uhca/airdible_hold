@@ -193,6 +193,11 @@ body {
                 color: $color-white;
                 width: auto;
                 margin: auto;
+
+                background: url('../img/assets/fluent_food-egg-20-regular.svg');
+                // background-size: cover;
+                background-position: bottom right;
+                background-repeat: no-repeat;
             }
 
             p {
@@ -330,8 +335,8 @@ body {
 
     .food-tray2 {
         position: absolute; 
-        top: 35%;
-        right: 20%;
+        top: 30%;
+        right: 30%;
         transition: all .65s ease;
     }
 
@@ -343,7 +348,7 @@ body {
 
     .soft-s-1 {
         position: absolute; 
-        top: 20%;
+        top: 30%;
         left: 25%;
     }
 
