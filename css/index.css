@@ -55,11 +55,10 @@ body {
           color: #9E9E9E;
           display: inline-block;
           transform: scale(0);
-          transition: transform .650s;
-          backface-visibility: hidden; }
+          transition: transform .65s; }
           #header .container nav .nav-list .nav-item .nav-link:hover {
             color: #000;
-            transition: all .3s ease; }
+            transition: all .65s ease; }
     #header .container nav .nav-list.active .nav-item .nav-link {
       transform: scale(1); }
     #header .container nav .nav-list.active .nav-item:nth-child(1) .nav-link {
@@ -88,7 +87,7 @@ body {
         color: #9E9E9E;
         transition: all .65s ease; }
   #header #hero {
-    margin-top: 12rem;
+    margin-top: 13rem;
     position: relative;
     z-index: 99; }
     #header #hero .centered {
@@ -121,7 +120,7 @@ body {
     #header #hero .btm-links {
       display: flex;
       justify-content: space-between;
-      margin-top: 23rem; }
+      margin-top: 25rem; }
       #header #hero .btm-links .links {
         display: flex; }
         #header #hero .btm-links .links .item {
@@ -243,11 +242,64 @@ body {
 .translatexy {
   transform: translate(-7rem, -3rem) rotate(-45deg); }
 
+@keyframes moveUp {
+  0% {
+    margin-top: 15rem; }
+  100% {
+    margin-top: 0; } }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000; }
+
+.centered-cta {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveUp .65s ease;
+  background-color: #fff;
+  width: 33.5rem;
+  height: auto;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1001;
+  padding: 3rem 0; }
+  .centered-cta .item {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.6rem 0;
+    border-radius: .4rem;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .centered-cta .item img {
+      display: inline-block;
+      margin-left: .5rem;
+      height: 1.4rem;
+      width: auto; }
+    .centered-cta .item:first-child {
+      background-color: #F9F9F9;
+      color: #9E9E9E; }
+    .centered-cta .item:last-child {
+      background-color: #399431;
+      color: #fff;
+      margin-top: 2rem; }
+    .centered-cta .item a {
+      text-decoration: none;
+      color: inherit; }
+
 @media screen and (max-width: 468px) {
-  .container {
-    width: 90%; }
-  nav {
-    height: 7rem !important; }
   .nav-list {
     width: 100%;
     height: 100vh;
@@ -261,11 +313,60 @@ body {
     transition: bottom 650ms;
     z-index: 998; }
     .nav-list .nav-item {
-      margin: 3rem 0; }
+      margin: 4rem 0; }
       .nav-list .nav-item .nav-link {
         color: #000 !important;
         font-size: 1.6rem !important; }
-  .nav-list.active {
+  .container {
+    width: 90%; }
+  #header #hero {
+    margin-top: 10rem; }
+    #header #hero .centered h1 {
+      font-size: 4.4rem !important;
+      width: 100% !important; }
+    #header #hero .centered p {
+      width: 100% !important;
+      font-size: 1.4rem; }
+    #header #hero .btm-links {
+      flex-direction: column;
+      margin-top: 12rem !important; }
+      #header #hero .btm-links .links {
+        justify-content: space-between; }
+        #header #hero .btm-links .links .item {
+          margin-right: 2rem !important; }
+          #header #hero .btm-links .links .item h5 {
+            font-size: 1rem; }
+          #header #hero .btm-links .links .item p {
+            font-size: 1.2rem; }
+          #header #hero .btm-links .links .item:last-child {
+            margin-right: 0 !important; }
+      #header #hero .btm-links .form {
+        width: 100%;
+        background-color: #fff !important;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between; }
+        #header #hero .btm-links .form input[type=email] {
+          width: 80% !important; }
+        #header #hero .btm-links .form button[type=submit] {
+          width: 15%; }
+  #header .scape {
+    bottom: 0;
+    right: 1rem;
+    width: 9rem !important;
+    height: auto; }
+    #header .scape img {
+      width: 100%; }
+  .will-hide {
+    display: none; } }
+
+.soft-s-2 {
+  bottom: 35% !important;
+  left: 10% !important; }
+
+nav {
+  height: 6rem !important; }
+  nav .nav-list.active {
     bottom: 0; }
-  .toggle {
-    color: #000 !important; } }
+  nav .toggle {
+    color: #000; }

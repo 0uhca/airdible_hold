@@ -11,6 +11,14 @@ selectElement ('.hamburger').addEventListener('click', () => {
     selectElement('.hamburger').classList.toggle('active');
     navList.classList.toggle('active');
 
+    if (navList.classList.contains('active')) {
+        navToggle.textContent = 'X Menu';
+        navToggle.style.color = '#000';
+    } else {
+        navToggle.textContent = 'O Menu';
+        navToggle.style.color = '#9E9E9E';
+    }
+
 
 // Create a media condition that targets viewports at least 768px wide
 
@@ -25,16 +33,23 @@ if (mediaQuery.matches) {
 
     happyEmoji.classList.toggle('rotatey-180')
   }
-    
-    if (navList.classList.contains('active')) {
-        navToggle.textContent = 'X Menu';
-        navToggle.style.color = '#000';
-    } else {
-        navToggle.textContent = 'O Menu';
-        navToggle.style.color = '#9E9E9E';
-    }
 
 });
+
+const toggleModal = document.querySelector('.order-now');
+const modalOverlay = document.querySelector('.overlay')
+
+const centeredCTA = document.querySelector('.centered-cta');
+
+toggleModal.addEventListener('click', () => {
+    modalOverlay.style.display = 'block';
+    centeredCTA.style.display = 'block';
+})
+
+modalOverlay.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+    centeredCTA.style.display = 'none';
+})
 
 
 
