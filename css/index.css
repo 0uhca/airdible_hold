@@ -219,7 +219,7 @@ body {
     bottom: 0;
     left: 0; }
   #header .scape {
-    position: fixed;
+    position: absolute;
     bottom: 2rem;
     right: 3rem;
     width: 15rem;
@@ -351,12 +351,7 @@ body {
         #header #hero .btm-links .form button[type=submit] {
           width: 15%; }
   #header .scape {
-    bottom: 0;
-    right: 1rem;
-    width: 9rem !important;
-    height: auto; }
-    #header .scape img {
-      width: 100%; }
+    display: none; }
   .will-hide {
     display: none; } }
 

@@ -359,7 +359,7 @@ body {
     }
 
     .scape {
-        position: fixed;
+        position: absolute;
         bottom: 2rem;
         right: 3rem;
         width: 15rem;
@@ -557,14 +557,7 @@ body {
             }
 
             .scape {
-                bottom: 0;
-                right: 1rem;
-                width: 9rem !important;
-                height: auto;
-
-                img {
-                    width: 100%;
-                }
+                display: none;
             }
         }
 
