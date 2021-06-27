@@ -3,7 +3,6 @@ const selectElement = (element) => document.querySelector(element);
 const navList = document.querySelector('.nav-list');
 const navToggle = document.querySelector('.toggle');
 const navLink = document.querySelector('.nav-link');
-const happyEmoji = document.querySelector('.happy-emoji');
 
 navToggle.textContent = 'O Menu'
 
@@ -30,8 +29,7 @@ if (mediaQuery.matches) {
     document.querySelector('.centered').classList.toggle('translatey-40')
     document.querySelector('.review-x').classList.toggle('translatex-40')
     document.querySelector('.food-tray2').classList.toggle('translatexy')
-
-    happyEmoji.classList.toggle('rotatey-180')
+    document.querySelector('.happy-emoji').classList.toggle('rotatey-180')
   }
 
 });

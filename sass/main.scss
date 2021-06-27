@@ -105,6 +105,14 @@ body {
                 
                 .nav-item {
                     padding: 0 1.5rem;
+
+                    &:nth-child(1) {
+                        
+                        abbr {
+                            text-decoration: none;
+                        }
+                        
+                    }
         
                     .nav-link {
                         text-decoration: none;
@@ -114,15 +122,14 @@ body {
                         display: inline-block;
                         transform: scale(0);
                         transition: transform .65s;
+
                         
                         &:hover {
                             color: $color-white;
                             transition: all .65s ease;
                         }
                     }
-                }
-             
-        
+                }        
             }
         
             .nav-list.active .nav-item .nav-link {
@@ -197,7 +204,6 @@ body {
                 margin: auto;
 
                 background: url('../img/assets/fluent_food-egg-20-regular.svg');
-                // background-size: cover;
                 background-position: bottom right;
                 background-repeat: no-repeat;
             }

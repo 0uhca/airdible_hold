@@ -51,6 +51,8 @@ body {
       list-style: none; }
       #header .container nav .nav-list .nav-item {
         padding: 0 1.5rem; }
+        #header .container nav .nav-list .nav-item:nth-child(1) abbr {
+          text-decoration: none; }
         #header .container nav .nav-list .nav-item .nav-link {
           text-decoration: none;
           font-family: "Bebas Neue", cursive;
